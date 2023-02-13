@@ -1,13 +1,13 @@
-import _ from 'lodash';
-import './style.css';
+import './css/style.css';
+import './css/custom.css'
+import ui from './modules/UI.js';
+import quoteInsurance from './modules/quoteInsurance.js';
 
-function component() {
-  const element = document.createElement('div');
+export const form = document.querySelector('#quote-insurance');
 
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Enjoy', 'this', 'Webpack', 'boilerplate'], ' ');
+document.addEventListener('DOMContentLoaded', () => {
+  // fill the years
+  ui.fillOptions();
+});
 
-  return element;
-}
-
-document.body.appendChild(component());
+form.addEventListener('submit', quoteInsurance);
