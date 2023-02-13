@@ -18,7 +18,7 @@
 
 # 📖 Car Insurance <a name="about-project"></a>
 
-A Car Insurance ...
+It is a project that allows you to quote your car insurance. It will enable you to choose the brand, year, and type of insurance.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -30,7 +30,7 @@ A Car Insurance ...
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]()
+- [Live Demo Link](https://vvoo21.github.io/Car-Insurance/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
