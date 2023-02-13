@@ -1,4 +1,5 @@
-import { form } from '../index.js';
+/* eslint-disable */
+import form from '../index.js';
 
 function UI() {}
 
@@ -17,11 +18,11 @@ UI.prototype.fillOptions = () => {
   }
 };
 
-//show alert
+// show alert
 UI.prototype.showMessage = (message, type) => {
   const div = document.createElement('div');
 
-  if(type === 'error') {
+  if (type === 'error') {
     div.classList.add('error');
   } else {
     div.classList.add('correct');
@@ -43,7 +44,7 @@ UI.prototype.showResult = (total, insurance) => {
 
   let brandName;
 
-  switch(brand) {
+  switch (brand) {
     case '1':
       brandName = 'American';
       break;
@@ -77,8 +78,8 @@ UI.prototype.showResult = (total, insurance) => {
   setTimeout(() => {
     spinner.style.display = 'none';
     resultDiv.appendChild(div);
-  } , 2000);
-}
+  }, 2000);
+};
 
 // instantiate the UI
 const ui = new UI();

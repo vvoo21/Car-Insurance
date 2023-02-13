@@ -1,3 +1,4 @@
+/* eslint-disable */
 import ui from './UI.js';
 import Insurance from './constructor.js';
 
@@ -6,17 +7,17 @@ const quoteInsurance = (e) => {
   const brand = document.querySelector('#brand').value;
   const year = document.querySelector('#year').value;
   const type = document.querySelector('input[name="type"]:checked').value;
-  
-  if(brand === '' || year === '' || type === ''){
+
+  if (brand === '' || year === '' || type === '') {
     ui.showMessage('All fields are required', 'error');
-    return
+    return;
   }
 
   ui.showMessage('Quoting...', 'correct');
 
   // hide previous quotes
   const results = document.querySelector('#result div');
-  if(results != null) {
+  if (results != null) {
     results.remove();
   }
 
@@ -26,7 +27,6 @@ const quoteInsurance = (e) => {
 
   // show the result
   ui.showResult(total, insurance);
-
 };
 
 export default quoteInsurance;
